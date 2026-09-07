@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS Survey</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1>Provide Your Feedback</h1>
+
+<h2>Please Provide Feedback About Your Visit!</h2>
+
+<!--Make this text smaller with CSS -->
+<p><i>Fields noted with * are required.</i></p>
+
+<form action="placeholder" method="POST">
+    <h3>Enter Your Information</h3>
+    <!--User details -->
+    <label for="username">Username*</label><br>
+    <input type="text" id="username" name="username" autocomplete="username" placeholder="e.g. jondoe123" autofocus required><br>
+
+    <label for="address">Street Address*</label><br>
+    <input type="text" id="address" name="address" autocomplete="street-address" placeholder="e.g. 123 Cherry Street" required><br>
+
+    <label for="city">City*</label><br>
+    <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="e.g. Fairfax" required><br>
+
+    <label for="state">State*</label><br>
+    <input type="text" id="state" name="state" autocomplete="address-level1" placeholder="e.g. Virginia" required><br>
+
+    <label for="zip">Zip Code*</label><br>
+    <input type="text" id="zip" name="zip" autocomplete="postal-code" placeholder="e.g. 12345" required><br>
+
+    <label for="phone">Phone Number</label><br>
+    <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 555-555-5555"><br>
+
+    <label for="email">E-Mail Address*</label><br>
+    <input type="email" id="email" name="email" autocomplete="email" placeholder="e.g. username@email.com" required><br>
+
+    <label for="url">URL</label><br>
+    <input type="url" id="url" name="url" placeholder="e.g. domainname.com""><br>
+
+    <label for="date">Date of Survey*</label><br>
+    <input type="date" id="date" name="date" required><br>
+    <br>
+    <h3>Tell Us What You Liked Most*</h3>
+        <!--Checkbox selection for what students liked -->
+    <input type="checkbox" id="students" name="liked-most" value="students">
+    <label for="students">Students</label><br>
+
+    <input type="checkbox" id="location" name="liked-most" value="location">
+    <label for="location">Location</label><br>
+
+    <input type="checkbox" id="campus" name="liked-most" value="campus">
+    <label for="campus">Campus</label><br>
+
+    <input type="checkbox" id="atmosphere" name="liked-most" value="atmosphere">
+    <label for="atmosphere">Atmosphere</label><br>
+
+    <input type="checkbox" id="dorms" name="liked-most" value="dorms">
+    <label for="dorms">Dorm Rooms</label><br>
+
+    <input type="checkbox" id="sports" name="liked-most" value="sports">
+    <label for="sports">Sports</label><br>
+    <br>
+    <h3>How Did You Become Interested in George Mason University?*</h3>
+
+    <!--Radio button selection for what interested prospective student in GMU -->
+    <input type="radio" id="friends" name="interest" value="friends">
+    <label for="friends">Friends</label><br>
+
+    <input type="radio" id="television" name="interest" value="television">
+    <label for="television">Television</label><br>
+
+    <input type="radio" id="internet" name="interest" value="internet">
+    <label for="internet">Internet</label><br>
+
+    <input type="radio" id="other" name="interest" value="other">
+    <label for="other">Other</label><br>
+    <br>
+    <h3>Enter Your High-School Graduation Month and Year*</h3>
+
+    <!--Datalist for graduation month -->
+    <label for="grad-month">Choose a Month:</label>
+    <input id="grad-month" name="grad-month" list="grad-month-list">
+
+    <datalist id="grad-month-list">
+        <option value="January">
+        <option value="February">
+        <option value="March">
+        <option value="April">
+        <option value="May">
+        <option value="June">
+        <option value="July">
+        <option value="August">
+        <option value="September">
+        <option value="October">
+        <option value="November">
+        <option value="December">
+    </datalist>
+
+    <label for="grad-year">Enter Year</label>
+    <input type="text" id="grad-year" name="grad-year"><br>
+
+    <h3>What is the Likelihood of Recommending George Mason to Other Prospective Students?*</h3>
+
+    <!--Dropdown list to select likelihood this prospective student will recommend GMU -->
+    <label for="recommend">Please Select a Likelihood</label>
+
+    <select name="recommend" id="recommend">
+        <option value="" disable selected>Select and option...</option>
+        <option value="very-likely">Very Likely</option>
+        <option value="likely">Likely</option>
+        <option value="unlikely">Unlikely</option>
+    </select>
+
+</form>
+
+</body>
